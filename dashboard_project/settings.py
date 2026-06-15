@@ -82,12 +82,8 @@ WSGI_APPLICATION = 'dashboard_project.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'dashboard_db',
-        'USER': 'postgres',
-        'PASSWORD': 'tejas',
-        'HOST': 'localhost',
-        'PORT': '5432',
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
 
